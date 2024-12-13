@@ -26,7 +26,7 @@ const PostJob = () => {
 
     const jobData = { title, salary, category };
 
-    fetch("http://localhost:3000/jobs", {
+    fetch("https://job-search-2-d504b1a6097d.herokuapp.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobData),

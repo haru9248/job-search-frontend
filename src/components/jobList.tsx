@@ -14,7 +14,7 @@ const JobList = ({ filters }: { filters: { category: string[]; salary: number } 
   const jobsPerPage = 10;
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/jobs")
+    fetch("https://job-search-2-d504b1a6097d.herokuapp.com")
       .then((response) => response.json())
       .then((data) => {
         console.log("Fetching jobs:", data);
